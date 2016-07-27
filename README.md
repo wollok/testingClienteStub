@@ -20,4 +20,7 @@ Entonces para probar que un cliente suma correctamente los saldos de la factura 
 * Testeo unitario
 * Stub
 
+# Más información
+
+En el [apunte de Testing] (https://docs.google.com/document/d/1caDE_mlP1QMfzyVpyvh-tKshjAeYLXBkXDYrTX5zFUI/edit#)
 
