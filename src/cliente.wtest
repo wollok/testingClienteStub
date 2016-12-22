@@ -1,7 +1,8 @@
 import cliente.*
 
-test "el saldo del cliente de una sola factura de prueba es el saldo de esa factura" {
+test "el saldo del cliente suma el saldo de las facturas pendientes" {
 	const cliente = new Cliente()
-	cliente.agregarFactura(new FacturaPrueba())
-	assert.equals(100, cliente.saldo())
+	cliente.agregarFactura(new FacturaPrueba(150))
+	cliente.agregarFactura(new FacturaPrueba(250))
+	assert.equals(400, cliente.saldo())
 }

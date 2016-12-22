@@ -12,5 +12,9 @@ class Cliente {
  * Implementación "de resguardo" (stub) para poder probar el saldo de un cliente
  */
 class FacturaPrueba {
-	method saldo() = 100
+	const saldo
+	constructor(_saldo) { 
+		saldo = _saldo
+	}
+	method saldo() = saldo
 }
