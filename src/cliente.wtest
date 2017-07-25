@@ -2,7 +2,12 @@ import cliente.*
 
 test "el saldo del cliente suma el saldo de las facturas pendientes" {
 	const cliente = new Cliente()
+	// una forma es generar una factura de prueba
 	cliente.agregarFactura(new FacturaPrueba(150))
-	cliente.agregarFactura(new FacturaPrueba(250))
+	// otra forma es crear un objeto anónimo,
+	// que sea polimórfico con los otros objetos en cuestión
+	cliente.agregarFactura(object {
+		method saldo() = 250
+	})
 	assert.equals(400, cliente.saldo())
 }
