@@ -1,4 +1,7 @@
 # Clientes - Testing con stubs
+ 
+[![Build Status](https://travis-ci.org/wollok/testingClienteStub.svg?branch=master)](https://travis-ci.org/wollok/testingClienteStub)
+
 
 <img src="img/stub.jpg" height="150" width="150">
 
