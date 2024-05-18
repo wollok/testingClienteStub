@@ -3,7 +3,7 @@ import cliente.*
 test "el saldo del cliente suma el saldo de las facturas pendientes" {
 	const cliente = new Cliente()
 	// una forma es generar una factura de prueba
-	cliente.agregarFactura(new FacturaPrueba(150))
+	cliente.agregarFactura(new FacturaPrueba(saldo = 150))
 	// otra forma es crear un objeto anónimo,
 	// que sea polimórfico con los otros objetos en cuestión
 	cliente.agregarFactura(object {
@@ -11,7 +11,7 @@ test "el saldo del cliente suma el saldo de las facturas pendientes" {
 	})
 	// lo mismo es utilizar una variable (en este caso local)
 	const facturaFicticia = object {
-		var valorBase = 150
+		const valorBase = 150
 		method saldo() = valorBase * 2
 	}
 	cliente.agregarFactura(facturaFicticia)

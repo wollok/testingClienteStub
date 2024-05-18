@@ -17,9 +17,5 @@ class FacturaPrueba {
 
 	const property saldo
 
-	constructor(_saldo) {
-		saldo = _saldo
-	}
-
 }
 
